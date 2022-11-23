@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Authcontext } from "../Context/Authprovide";
+import "./Login.css";
 
 const Login = () => {
   const { login } = useContext(Authcontext);
@@ -19,38 +20,40 @@ const Login = () => {
   };
   return (
     <div>
-      <div className="hero min-h-screen">
+      <div className="hero min-h-screen bg-black">
         <div className="hero-content flex-col ">
-          <h1 className="text-3xl text-center">Login</h1>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <h1 className="text-3xl text-center text-white">Login</h1>
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl shadow-green-400 ">
             <form onSubmit={handleLogin} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text text-white">Email</span>
                 </label>
                 <input
                   type="email"
                   placeholder="email"
                   name="email"
-                  className="input input-bordered"
+                  className="input bg-gray-400 input-bordered"
                 />
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text text-white">Password</span>
                 </label>
                 <input
                   type="password"
                   placeholder="password"
-                  className="input input-bordered"
+                  className="input bg-slate-400 input-bordered"
                   name="password"
                 />
                 <label className="label">
-                  <Link to="/signup">New to Signup first</Link>
+                  <Link to="/signup" className="text-green-600">
+                    New to Signup first
+                  </Link>
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn btn-all">Login</button>
               </div>
             </form>
           </div>

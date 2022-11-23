@@ -5,7 +5,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar flex justify-between">
+      <div className="navbar pt-8 text-white pr-8 bg-black mr-8 flex justify-between">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -26,7 +26,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52"
             >
               <Link to="/home">Home</Link>
               <Link to="/login">Login</Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
             <Link to="/blog" className="mr-2 ml-2 nav-menu text-2xl">
               Blog
             </Link>
-            <Link to="/categorey" className="mr-2 nav-menu  text-2xl">
+            <Link to="/categorey" className="mr-2 ml-2 nav-menu  text-2xl">
               categorey
             </Link>
           </ul>
