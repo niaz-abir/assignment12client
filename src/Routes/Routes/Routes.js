@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blog from "../../Component/Blog/Blog";
+import Notfound from "../../Component/Notfound/Notfound";
 import Register from "../../Component/Register/Register";
 import Main from "../../layout/Main";
 import Login from "../../Login/Login";
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
       { path: "/signup", element: <Register></Register> },
       { path: "/product/:type", element: <Product></Product> },
       { path: "/booking", element: <BookingModal></BookingModal> },
+      { path: "/*", element: <Notfound></Notfound> },
     ],
   },
 ]);
