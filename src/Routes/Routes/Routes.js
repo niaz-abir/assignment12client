@@ -4,6 +4,8 @@ import Register from "../../Component/Register/Register";
 import Main from "../../layout/Main";
 import Login from "../../Login/Login";
 import Home from "../../Pages/Home/Home/Home";
+import BookingModal from "../../Pages/Product/BookingModal";
+import Product from "../../Pages/Product/Product";
 import Footer from "../../Shared/Footer/Footer";
 import Navbar from "../../Shared/Navbar/Navbar";
 
@@ -19,7 +21,8 @@ export const router = createBrowserRouter([
       { path: "/blog", element: <Blog></Blog> },
       { path: "/login", element: <Login></Login> },
       { path: "/signup", element: <Register></Register> },
-      { path: "/category/:id", element: <h1>TWo picture in category</h1> },
+      { path: "/product/:type", element: <Product></Product> },
+      { path: "/booking", element: <BookingModal></BookingModal> },
     ],
   },
 ]);
