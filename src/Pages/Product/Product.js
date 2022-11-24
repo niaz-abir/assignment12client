@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import BookingModal from "./BookingModal";
 import Singleproduct from "./Singleproduct";
@@ -8,15 +8,16 @@ import Singleproduct from "./Singleproduct";
 
 const Product = () => {
   const params = useParams();
+  const [modalData, setModaldata] = useState({});
 
   const { data: products = [] } = useQuery({
     queryKey: ["product"],
     queryFn: async () => {
       const response = await axios.get(
-        // `http://localhost:5000/categorey/${params.type}`
-        "http://localhost:5000/categorey/History"
+        `http://localhost:5000/categorey/${params.type}`
+        // "http://localhost:5000/categorey/History"
       );
-      console.log(response.data, params.type);
+      console.log(params.type);
       return response.data;
     },
   });
@@ -27,10 +28,11 @@ const Product = () => {
           <Singleproduct
             oneproduct={oneproduct}
             key={oneproduct.id}
+            setModaldata={setModaldata}
           ></Singleproduct>
         ))}
       </div>
-      <BookingModal></BookingModal>
+      <BookingModal modalData={modalData}></BookingModal>
     </div>
   );
 };

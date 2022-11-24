@@ -1,6 +1,6 @@
 import React from "react";
 
-const Singleproduct = ({ oneproduct }) => {
+const Singleproduct = ({ oneproduct, setModaldata }) => {
   const {
     name,
     img,
@@ -33,7 +33,11 @@ const Singleproduct = ({ oneproduct }) => {
           <p>verify:{verify}</p>
 
           <div className="card-actions">
-            <label htmlFor="bookingModal" className="btn btn-all">
+            <label
+              onClick={() => setModaldata(oneproduct)}
+              htmlFor="bookingModal"
+              className="btn btn-all"
+            >
               Booking Now
             </label>
           </div>

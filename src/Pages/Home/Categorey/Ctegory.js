@@ -19,7 +19,7 @@ const Ctegory = () => {
         {categorey.map((singlecategtoey) => (
           <Categorycard
             singlecategtoey={singlecategtoey}
-            key={singlecategtoey.id}
+            key={singlecategtoey._id}
           ></Categorycard>
         ))}
       </div>

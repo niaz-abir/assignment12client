@@ -6,6 +6,7 @@ import { Authcontext } from "../../Context/Authprovide";
 const Register = () => {
   const { createuser, googleSignin } = useContext(Authcontext);
   const googleprovider = new GoogleAuthProvider();
+
   const handleSignup = (event) => {
     event.preventDefault();
     const form = event.target;
