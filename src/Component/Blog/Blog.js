@@ -2,14 +2,16 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div>
-      <h1>Our Blog Question !</h1>
-      <div>
-        <h1>
+    <div className="pt-16 pl-16 pb-8 bg-black">
+      <h1 className="text-4xl justify-start lg:text-center text-green-600 text-bold mb-4 pb-4 text-ellipsis">
+        OUR BLOG QUESTION !
+      </h1>
+      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-green-600">
+        <h1 className="text-2xl font-bold mb-2 text-green-600">
           Q1- What are the different ways to manage a state in a React
           application?
         </h1>
-        <p>
+        <p className="text-white">
           Ans:As your application grows, it helps to be more intentional about
           how your state is organized and how the data flows between your
           components. Redundant or duplicate state is a common source of bugs.
@@ -24,9 +26,11 @@ const Blog = () => {
           user input. This is similar to how designers think about UI.
         </p>
       </div>
-      <div>
-        <h1>Q2- how does phototypical work ?</h1>
-        <p>
+      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-green-600">
+        <h1 className="text-2xl font-bold mb-2 text-green-600">
+          Q2- how does phototypical work ?
+        </h1>
+        <p className="text-white">
           Prototyping is an experimental process where design teams implement
           ideas into tangible forms from paper to digital. Teams build
           prototypes of varying degrees of fidelity to capture design concepts
@@ -38,9 +42,11 @@ const Blog = () => {
           solve users’ needs.
         </p>
       </div>
-      <div>
-        <h1>Q3- What is a unit test ? Why should we write unit test?</h1>
-        <p>
+      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-green-600">
+        <h1 className="text-2xl font-bold mb-2 text-green-600">
+          Q3- What is a unit test ? Why should we write unit test?
+        </h1>
+        <p className="text-white">
           What is Unit Testing? Unit Testing is a type of software testing where
           individual units or components of a software are tested. The purpose
           is to validate that each unit of the software code performs as
@@ -55,9 +61,11 @@ const Blog = () => {
           could also introduce new bugs into the system.
         </p>
       </div>
-      <div>
-        <h1>Q4- React vs Angular vs Vue?</h1>
-        <p>
+      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-green-600">
+        <h1 className="text-2xl font-bold mb-2 text-green-600">
+          Q4- React vs Angular vs Vue?
+        </h1>
+        <p className="text-white">
           Ans: There are three frameworks for building web applications that
           every frontend developer has heard about: React, Vue.js, and Angular.
           React is a UI library, Angular is a fully-fledged front-end framework,
