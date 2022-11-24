@@ -5,7 +5,7 @@ const Ctegory = () => {
   const [categorey, setcatgorey] = useState([]);
 
   useEffect(() => {
-    fetch("category.json")
+    fetch("http://localhost:5000/categorey")
       .then((res) => res.json())
       .then((data) => setcatgorey(data));
   }, []);

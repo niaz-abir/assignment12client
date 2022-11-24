@@ -39,7 +39,7 @@ const Blog = () => {
         </p>
       </div>
       <div>
-        <h1>Q2- What is a unit test ? Why should we write unit test?</h1>
+        <h1>Q3- What is a unit test ? Why should we write unit test?</h1>
         <p>
           What is Unit Testing? Unit Testing is a type of software testing where
           individual units or components of a software are tested. The purpose
@@ -53,6 +53,21 @@ const Blog = () => {
           these issues could’ve been used to build new features or optimize the
           existing system. Bear in mind that fixing bugs without running tests
           could also introduce new bugs into the system.
+        </p>
+      </div>
+      <div>
+        <h1>Q4- React vs Angular vs Vue?</h1>
+        <p>
+          Ans: There are three frameworks for building web applications that
+          every frontend developer has heard about: React, Vue.js, and Angular.
+          React is a UI library, Angular is a fully-fledged front-end framework,
+          while Vue.js is a progressive framework. They can be used almost
+          interchangeably to build front-end applications, but they’re not 100
+          percent the same, so it makes sense to compare them and understand
+          their differences. Each framework is component-based and allows the
+          rapid creation of UI features. However, they all have a different
+          structure and architecture — so first, we’ll look into their
+          architectural differences to understand the philosophy behind them.
         </p>
       </div>
     </div>
