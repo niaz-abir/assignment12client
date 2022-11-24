@@ -3,11 +3,13 @@ import Categorycard from "./Categorycard";
 
 const Ctegory = () => {
   const [categorey, setcatgorey] = useState([]);
+
   useEffect(() => {
     fetch("category.json")
       .then((res) => res.json())
       .then((data) => setcatgorey(data));
   }, []);
+
   return (
     <div className="bg-black pt-16 pb-16">
       <h1 className="text-3xl text-center text-white pb-8  font-bold">

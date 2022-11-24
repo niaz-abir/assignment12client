@@ -64,3 +64,12 @@ const Login = () => {
 };
 
 export default Login;
+
+// <div className="grid gap-6 grid-cols-1 lg:grid-cols-2 pt-16 pl-8 lg:pl-32  bg-black">
+// {productdata.map((oneproduct) => (
+//   <Singleproduct
+//     oneproduct={oneproduct}
+//     key={oneproduct.id}
+//   ></Singleproduct>
+// ))}
+// </div>
