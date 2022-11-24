@@ -34,11 +34,16 @@ const Navbar = () => {
               <Link to="/categorey">categorey</Link>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-4xl">daisyUI</a>
+          <Link
+            to="/"
+            className="text-green-600  border-green-600 p-3 border-2 rounded-lg normal-case text-4xl"
+          >
+            Bookworm Shack
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
-            <Link to="/home" className="mr-4 nav-menu  text-2xl">
+            <Link to="/home" className="mr-4 nav-menu   text-2xl">
               Home
             </Link>
             <Link to="/login" className="mr-2 nav-menu  text-2xl">
