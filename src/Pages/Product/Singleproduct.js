@@ -34,7 +34,7 @@ const Singleproduct = ({ oneproduct }) => {
 
           <div className="card-actions">
             <label htmlFor="bookingModal" className="btn btn-all">
-              open modal
+              Booking Now
             </label>
           </div>
         </div>
