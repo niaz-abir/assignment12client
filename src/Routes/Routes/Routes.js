@@ -4,6 +4,7 @@ import Notfound from "../../Component/Notfound/Notfound";
 import Register from "../../Component/Register/Register";
 import Main from "../../layout/Main";
 import Login from "../../Login/Login";
+import Addproduct from "../../Pages/Addproduct/Addproduct";
 import Home from "../../Pages/Home/Home/Home";
 import BookingModal from "../../Pages/Product/BookingModal";
 import Product from "../../Pages/Product/Product";
@@ -24,6 +25,7 @@ export const router = createBrowserRouter([
       { path: "/signup", element: <Register></Register> },
       { path: "/product/:type", element: <Product></Product> },
       { path: "/booking", element: <BookingModal></BookingModal> },
+      { path: "/add-product", element: <Addproduct></Addproduct> },
       { path: "/*", element: <Notfound></Notfound> },
     ],
   },

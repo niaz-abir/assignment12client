@@ -36,7 +36,6 @@ const Register = () => {
 
         if (user) {
           saveuser(name, email, type);
-          console.log(saveuser);
         }
       })
       .catch((error) => console.log(error));
