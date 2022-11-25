@@ -14,8 +14,8 @@ const Product = () => {
     queryKey: ["product"],
     queryFn: async () => {
       const response = await axios.get(
-        `http://localhost:5000/categorey/${params.type}`
-        // "http://localhost:5000/categorey/History"
+        `https://assignment12-server.vercel.app/categorey/${params.type}`
+        // "https://assignment12-server.vercel.app/categorey/History"
       );
       console.log(params.type);
       return response.data;

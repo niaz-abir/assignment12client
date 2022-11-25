@@ -1,6 +1,19 @@
-import React from "react";
+import { useQuery } from "@tanstack/react-query";
+import React, { useContext } from "react";
+import { Authcontext } from "../../Context/Authprovide";
 
 const Myproduct = () => {
+  const { user } = useContext(Authcontext);
+  const { data: product = [] } = useQuery({
+    queryKey: ["product"],
+    queryFn: async () => {
+      const response = await fetch(
+        `https://assignment12-server.vercel.app/${user?.email}`
+      );
+      const data = await response.json();
+      return data;
+    },
+  });
   return (
     <div>
       <div className="overflow-x-auto">

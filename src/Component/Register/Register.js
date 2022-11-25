@@ -1,20 +1,25 @@
 import axios from "axios";
 import { GoogleAuthProvider } from "firebase/auth";
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Authcontext } from "../../Context/Authprovide";
+import toast, { Toast } from "react-hot-toast";
 
 const Register = () => {
   const { createuser, googleSignin } = useContext(Authcontext);
   const googleprovider = new GoogleAuthProvider();
+  const navigate = useNavigate();
 
   const saveuser = async (name, email, type = "buyer") => {
     try {
-      const response = await axios.post("http://localhost:5000/user/new", {
-        name,
-        email,
-        type,
-      });
+      const response = await axios.post(
+        "https://assignment12-server.vercel.app/user/new",
+        {
+          name,
+          email,
+          type,
+        }
+      );
       console.log(name, email, type);
     } catch (error) {
       console.log(error);
@@ -33,6 +38,8 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        toast.success("create user succesfully");
+        navigate("/");
 
         if (user) {
           saveuser(name, email, type);

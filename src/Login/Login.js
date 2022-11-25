@@ -1,10 +1,16 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Authcontext } from "../Context/Authprovide";
 import "./Login.css";
 
 const Login = () => {
   const { login } = useContext(Authcontext);
+  const [error, seterror] = useState("");
+  let navigate = useNavigate();
+  let location = useLocation();
+
+  let from = location.state?.from?.pathname || "/";
+
   const handleLogin = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -15,14 +21,20 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        navigate(from, { replace: true });
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error);
+        seterror("Password cannot matched!");
+      });
   };
+
   return (
     <div>
       <div className="hero min-h-screen bg-black">
         <div className="hero-content flex-col ">
           <h1 className="text-3xl text-center text-white">Login</h1>
+          <p className="text-red-600">{error}</p>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl shadow-green-400 ">
             <form onSubmit={handleLogin} className="card-body">
               <div className="form-control">
@@ -64,12 +76,3 @@ const Login = () => {
 };
 
 export default Login;
-
-// <div className="grid gap-6 grid-cols-1 lg:grid-cols-2 pt-16 pl-8 lg:pl-32  bg-black">
-// {productdata.map((oneproduct) => (
-//   <Singleproduct
-//     oneproduct={oneproduct}
-//     key={oneproduct.id}
-//   ></Singleproduct>
-// ))}
-// </div>
