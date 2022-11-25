@@ -1,3 +1,4 @@
+import axios from "axios";
 import { GoogleAuthProvider } from "firebase/auth";
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
@@ -7,18 +8,36 @@ const Register = () => {
   const { createuser, googleSignin } = useContext(Authcontext);
   const googleprovider = new GoogleAuthProvider();
 
+  const saveuser = async (name, email, type = "buyer") => {
+    try {
+      const response = await axios.post("http://localhost:5000/user/new", {
+        name,
+        email,
+        type,
+      });
+      console.log(name, email, type);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const handleSignup = (event) => {
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
     const email = form.email.value;
-    const drone = form.drone.value;
+    const type = form.type.value;
     const password = form.password.value;
     // console.log(name, email, drone, password);
     createuser(email, password)
       .then((result) => {
         const user = result.user;
         console.log(user);
+
+        if (user) {
+          saveuser(name, email, type);
+          console.log(saveuser);
+        }
       })
       .catch((error) => console.log(error));
   };
@@ -61,27 +80,12 @@ const Register = () => {
                 />
               </div>
 
-              <div className="mt-4">
-                <p className="text-white">Please Select:</p>
-                <div>
-                  <input
-                    type="radio"
-                    id="huey"
-                    name="drone"
-                    value="user"
-                    checked
-                  ></input>
-                  <label className="text-white" for="huey">
-                    User
-                  </label>
-                </div>
-
-                <div>
-                  <input type="radio" id="dewey" name="drone" value="seller" />
-                  <label className="text-white" for="dewey">
-                    Seller
-                  </label>
-                </div>
+              <div className="form-control">
+                <label className="label">Account type</label>
+                <select className="input" name="type">
+                  <option value="buyer">buyer</option>
+                  <option value="seller">seller</option>
+                </select>
               </div>
 
               <div className="form-control">
