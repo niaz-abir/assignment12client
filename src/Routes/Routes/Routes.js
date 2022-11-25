@@ -6,6 +6,7 @@ import Main from "../../layout/Main";
 import Login from "../../Login/Login";
 import Addproduct from "../../Pages/Addproduct/Addproduct";
 import Home from "../../Pages/Home/Home/Home";
+import Myproduct from "../../Pages/Myproduct/Myproduct";
 import BookingModal from "../../Pages/Product/BookingModal";
 import Product from "../../Pages/Product/Product";
 import Footer from "../../Shared/Footer/Footer";
@@ -26,6 +27,7 @@ export const router = createBrowserRouter([
       { path: "/product/:type", element: <Product></Product> },
       { path: "/booking", element: <BookingModal></BookingModal> },
       { path: "/add-product", element: <Addproduct></Addproduct> },
+      { path: "/my-product", element: <Myproduct></Myproduct> },
       { path: "/*", element: <Notfound></Notfound> },
     ],
   },
