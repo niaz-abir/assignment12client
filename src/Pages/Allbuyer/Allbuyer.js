@@ -1,13 +1,30 @@
 import { useQuery } from "@tanstack/react-query";
 import { data } from "autoprefixer";
+import axios from "axios";
 import React from "react";
+import toast from "react-hot-toast";
 
 const Allbuyer = () => {
-  const { data: allbuyer = [] } = useQuery({
+  const { data: allbuyer = [], refetch } = useQuery({
     queryKey: ["buyer"],
     queryFn: () =>
-      fetch("http://localhost:5000/user/all-buyer").then((res) => res.json()),
+      fetch("https://assignment12-server.vercel.app/user/all-buyer").then(
+        (res) => res.json()
+      ),
   });
+  const handledelete = async (_id) => {
+    try {
+      const response = await axios.delete(
+        `https://assignment12-server.vercel.app/user/delete/${_id}`
+      );
+      if (response?.data?.deletedCount > 0) {
+        refetch();
+        toast.success("product deleted");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="mt-8">
@@ -28,7 +45,9 @@ const Allbuyer = () => {
                 <td>{singlebuyer.name}</td>
                 <td>{singlebuyer.email}</td>
                 <td>{singlebuyer.type}</td>
-                <button>delete</button>
+                <button onClick={() => handledelete(singlebuyer._id)}>
+                  delete
+                </button>
               </tr>
             ))}
           </tbody>
