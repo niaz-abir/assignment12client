@@ -68,7 +68,7 @@ const Navbar = () => {
               categorey
             </Link> */}
             {user?.uid && userType == "buyer" && (
-              <Link to="/blog" className="mr-2 ml-2 nav-menu text-2xl">
+              <Link to="/my-order" className="mr-2 ml-2 nav-menu text-2xl">
                 My Order
               </Link>
             )}
@@ -85,10 +85,13 @@ const Navbar = () => {
             {user?.uid && userType == "admin" && (
               <>
                 <>
-                  <Link to="/dashboard" className="mr-2 ml-2 nav-menu text-2xl">
+                  <Link
+                    to="/all-seller"
+                    className="mr-2 ml-2 nav-menu text-2xl"
+                  >
                     All Sellers
                   </Link>
-                  <Link to="/dashboard" className="mr-2 ml-2 nav-menu text-2xl">
+                  <Link to="/all-buyer" className="mr-2 ml-2 nav-menu text-2xl">
                     All Buyers
                   </Link>
                 </>
