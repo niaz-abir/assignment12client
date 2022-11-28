@@ -9,7 +9,7 @@ const Myproduct = () => {
     queryKey: ["product"],
     queryFn: async () => {
       const response = await fetch(
-        `https://assignment12-server.vercel.app/${user?.email}`
+        `https://assignment12-server.vercel.appproducts?email=${user?.email}`
       );
       const data = await response.json();
       return data;

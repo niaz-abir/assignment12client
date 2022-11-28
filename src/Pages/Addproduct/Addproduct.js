@@ -1,8 +1,10 @@
 import axios from "axios";
-import React from "react";
+import React, { useContext } from "react";
 import toast from "react-hot-toast";
+import { Authcontext } from "../../Context/Authprovide";
 
 const Addproduct = () => {
+  const { user } = useContext(Authcontext);
   const handlefiilup = async (event) => {
     event.preventDefault();
 
@@ -27,6 +29,7 @@ const Addproduct = () => {
       Description,
       Location,
       mobile,
+      seller: user?.email,
     };
     console.log(formdata);
     try {

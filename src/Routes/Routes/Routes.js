@@ -12,8 +12,10 @@ import Myorder from "../../Pages/Myorder/Myorder";
 import Myproduct from "../../Pages/Myproduct/Myproduct";
 import BookingModal from "../../Pages/Product/BookingModal";
 import Product from "../../Pages/Product/Product";
+import Singleproduct from "../../Pages/Product/Singleproduct";
 import Footer from "../../Shared/Footer/Footer";
 import Navbar from "../../Shared/Navbar/Navbar";
+import Privateroute from "../Privateroute/Privateroute";
 
 export const router = createBrowserRouter([
   {
@@ -27,8 +29,16 @@ export const router = createBrowserRouter([
       { path: "/blog", element: <Blog></Blog> },
       { path: "/login", element: <Login></Login> },
       { path: "/signup", element: <Register></Register> },
-      { path: "/product/:type", element: <Product></Product> },
+      {
+        path: "/product/:type",
+        element: (
+          <Privateroute>
+            <Product></Product>
+          </Privateroute>
+        ),
+      },
       { path: "/booking", element: <BookingModal></BookingModal> },
+      { path: "/singleproduct", element: <Singleproduct></Singleproduct> },
       { path: "/add-product", element: <Addproduct></Addproduct> },
       { path: "/my-product", element: <Myproduct></Myproduct> },
       { path: "/my-order", element: <Myorder></Myorder> },
