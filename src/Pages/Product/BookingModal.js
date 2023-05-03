@@ -48,11 +48,11 @@ const BookingModal = ({ modalData }) => {
             >
               ✕
             </label>
-            <h1 className="text-green-600 text-3xl">Your Booking Form</h1>
+            <h1 className="text-all text-3xl">Your Booking Form</h1>
 
             <div className="form-control bg-black w-full max-w-xs">
               <label className="label">
-                <span className="label-text  text-green-600">name</span>
+                <span className="label-text  text-all">name</span>
               </label>
               <input
                 type="text"
@@ -64,7 +64,7 @@ const BookingModal = ({ modalData }) => {
             </div>
             <div className="form-control w-full max-w-xs">
               <label className="label">
-                <span className="label-text  text-green-600">Email</span>
+                <span className="label-text  text-all">Email</span>
               </label>
               <input
                 type="email"
@@ -77,7 +77,7 @@ const BookingModal = ({ modalData }) => {
             </div>
             <div className="form-control w-full max-w-xs">
               <label className="label">
-                <span className="label-text  text-green-600">item</span>
+                <span className="label-text  text-all">item</span>
               </label>
               <input
                 type="text"
@@ -90,7 +90,7 @@ const BookingModal = ({ modalData }) => {
             </div>
             <div className="form-control w-full max-w-xs">
               <label className="label">
-                <span className="label-text  text-green-600">Price</span>
+                <span className="label-text  text-all">Price</span>
               </label>
               <input
                 type="text"
@@ -103,7 +103,7 @@ const BookingModal = ({ modalData }) => {
             </div>
             <div className="form-control w-full max-w-xs">
               <label className="label">
-                <span className="label-text  text-green-600">Phone</span>
+                <span className="label-text  text-all">Phone</span>
               </label>
               <input
                 type="text"
@@ -114,7 +114,7 @@ const BookingModal = ({ modalData }) => {
             </div>
             <div className="form-control w-full max-w-xs">
               <label className="label">
-                <span className="label-text  text-green-600">Address</span>
+                <span className="label-text  text-all">Address</span>
               </label>
               <input
                 type="text"
@@ -125,9 +125,7 @@ const BookingModal = ({ modalData }) => {
             </div>
             <div className="form-control mb-8 w-full max-w-xs">
               <label className="label">
-                <span className="label-text text-green-600">
-                  Metting-Location
-                </span>
+                <span className="label-text text-all">Metting-Location</span>
               </label>
               <input
                 type="text"

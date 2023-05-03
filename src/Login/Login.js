@@ -35,7 +35,7 @@ const Login = () => {
         <div className="hero-content flex-col ">
           <h1 className="text-3xl text-center text-white">Login</h1>
           <p className="text-red-600">{error}</p>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl shadow-green-400 ">
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl shadow-blue-400 ">
             <form onSubmit={handleLogin} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -59,7 +59,7 @@ const Login = () => {
                   name="password"
                 />
                 <label className="label">
-                  <Link to="/signup" className="text-green-600">
+                  <Link to="/signup" className="text-blue-400">
                     New to Signup first
                   </Link>
                 </label>

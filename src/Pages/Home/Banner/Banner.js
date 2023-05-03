@@ -1,68 +1,49 @@
 import React from "react";
 import cover from "../../../asset/cover.jpg";
 import cover1 from "../../../asset/cover2.jpg";
-import cover3 from "../../../asset/cover3 (2).jpg";
+import cover3 from "../../../asset/newcover.jpg";
+import { DiGoogleCloudPlatform } from "react-icons/di";
+import { MdLibraryBooks } from "react-icons/md";
+import { MdOutlineSettingsAccessibility } from "react-icons/md";
+import { RiWifiOffLine } from "react-icons/ri";
 import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className=" bg-black pt-16">
-      <div className="carousel w-full lg:w-3/4 mx-auto rounded-lg ">
-        <div id="slide1" className="carousel-item relative w-full">
-          <div className="cover_img">
-            <img src={cover3} alt="" className="w-full" />
-          </div>
-          <div className="absolute  flex justify-between transform -translate-y-1/2 left-24 right-5 top-1/2">
-            <h1 className="text-6xl font-bold text-white ">
-              Books is remind <br />
-              for us
-            </h1>
-          </div>
-
-          <div className="absolute lg:block hidden flex  mt-28 justify-between transform -translate-y-1/2 left-24 right-5 top-1/2 ">
-            <p className="text-white ">
-              Books remains us for good work .We can read lot of Book if we want
-              <br />
-              .So Books help us greatly .Here are lot of types book here.
-            </p>
-          </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-2/3">
-            <a href="#slide1" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide3" className="btn btn-circle">
-              ❯
-            </a>
+    <div className=" bg-black pt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 ml-32">
+        <div>
+          <h1 className="text-[43px] font-bold text-white">
+            A New <span className="all-text">Box Of Books</span> Every Month.
+          </h1>
+          <p className="mt-2">
+            We deliver boxes of fantastic books title, author, subject price
+            range, eligibility and more. straight to your door.
+          </p>
+          <div className="mt-2">
+            <button className="btn btn-all">About us</button>
           </div>
         </div>
+        <div className="mt-4">
+          <img className="h-5/6" src={cover3} alt=""></img>
+        </div>
 
-        <div id="slide3" className="carousel-item relative w-full">
-          <div className="cover_img">
-            <img src={cover} alt="" className="w-full" />
+        <div className="mt-8 lg:mt-14 text-[27px]">
+          <div className="flex gap-2 items-center text-2xl ml-2 mb-4 text-">
+            <DiGoogleCloudPlatform className="text-all text-[27px]"></DiGoogleCloudPlatform>
+            <h1 className="text-white text-[25px]">Large platform</h1>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <div className="absolute  flex justify-between transform -translate-y-1/2 left-24 right-5 top-1/2">
-              <h1 className="text-6xl font-bold text-white ">
-                Books is remind <br />
-                for us
-              </h1>
-            </div>
-
-            <div className="absolute lg:block hidden flex  mt-28 justify-between transform -translate-y-1/2 left-24 right-5 top-2/3">
-              <p className="text-white ">
-                Books remains us for good work .We can read lot of Book if we
-                want
-                <br />
-                .So Books help us greatly .Here are lot of types book here.
-              </p>
-            </div>
-
-            <a href="#slide1" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide1" className="btn btn-circle">
-              ❯
-            </a>
+          <div className="flex gap-2  text-2xl ml-6 mb-4">
+            <MdLibraryBooks className="text-all text-[27px]"></MdLibraryBooks>
+            <h1 className="text-white text-[25px]">Ten Thousand books</h1>
+          </div>
+          <div className="flex gap-2 text-2xl ml-10 mb-4">
+            <MdOutlineSettingsAccessibility className="text-all text-[27px]"></MdOutlineSettingsAccessibility>
+            <h1 className="text-white text-[25px]">Lifetime Access</h1>
+          </div>
+          <div className="flex gap-2 text-2xl ml-14 mb-4">
+            <RiWifiOffLine className="text-all text-[27px]"></RiWifiOffLine>
+            <h1 className="text-white text-[25px]">Read Offline</h1>
           </div>
         </div>
       </div>

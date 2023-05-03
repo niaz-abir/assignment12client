@@ -61,7 +61,7 @@ const Register = () => {
       <div className="hero min-h-screen bg-black">
         <div className="hero-content flex-col ">
           <h1 className="text-3xl text-center text-white">Signup</h1>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl shadow-green-500 ">
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl shadow-blue-400 ">
             <form onSubmit={handleSignup} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -105,7 +105,7 @@ const Register = () => {
                   className="input bg-gray-400 input-bordered"
                 />
                 <label className="label">
-                  <Link to="/login" className="text-green-600">
+                  <Link to="/login" className="text-blue-600">
                     Go to Login
                   </Link>
                 </label>

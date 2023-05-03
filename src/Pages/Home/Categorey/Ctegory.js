@@ -11,8 +11,8 @@ const Ctegory = () => {
   }, []);
 
   return (
-    <div className="bg-black pt-16 pb-16">
-      <h1 className="text-3xl text-center text-white pb-8  font-bold">
+    <div className="bg-black pt-12 pb-16">
+      <h1 className="text-2xl mb-4 text-all pb-8 ml-12 font-bold">
         Our product categorey
       </h1>
       <div className="grid ml-8 gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

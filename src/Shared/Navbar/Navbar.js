@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Authcontext } from "../../Context/Authprovide";
 import useUserType from "../../Hook/useUserType";
 import "./Navbar.css";
+import { AiFillRead } from "react-icons/ai";
 
 const Navbar = () => {
   const { user, logout } = useContext(Authcontext);
@@ -46,12 +47,12 @@ const Navbar = () => {
               <Link to="/categorey">categorey</Link>
             </ul>
           </div>
-          <Link
-            to="/"
-            className="text-green-600  border-green-600 p-3 border-2 rounded-lg normal-case text-4xl"
-          >
-            Bookworm Shack
-          </Link>
+          <div className="flex gap-4 items-center ml-4">
+            <AiFillRead className="text-all text-[30px]"></AiFillRead>
+            <Link to="/" className="text-[30px]">
+              Bookworm Shack
+            </Link>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
@@ -67,6 +68,7 @@ const Navbar = () => {
             {/* <Link to="/categorey" className="mr-2 ml-2 nav-menu  text-2xl">
               categorey
             </Link> */}
+
             {user?.uid && userType == "buyer" && (
               <Link to="/my-order" className="mr-2 ml-2 nav-menu text-2xl">
                 My Order
@@ -82,6 +84,7 @@ const Navbar = () => {
                 </Link>
               </>
             )}
+
             {user?.uid && userType == "admin" && (
               <>
                 <>

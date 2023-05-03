@@ -3,11 +3,11 @@ import React from "react";
 const Blog = () => {
   return (
     <div className="pt-16 pl-16 pb-8 bg-black">
-      <h1 className="text-4xl justify-start lg:text-center text-green-600 text-bold mb-4 pb-4 text-ellipsis">
-        OUR BLOG QUESTION !
+      <h1 className="text-4xl justify-start lg:text-center text-all text-bold mb-4 pb-4 text-ellipsis">
+        Learn Your Blog
       </h1>
-      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-green-600">
-        <h1 className="text-2xl font-bold mb-2 text-green-600">
+      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-sky-500">
+        <h1 className="text-2xl font-bold mb-2 text-all">
           Q1- What are the different ways to manage a state in a React
           application?
         </h1>
@@ -26,8 +26,8 @@ const Blog = () => {
           user input. This is similar to how designers think about UI.
         </p>
       </div>
-      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-green-600">
-        <h1 className="text-2xl font-bold mb-2 text-green-600">
+      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-sky-500">
+        <h1 className="text-2xl font-bold mb-2 text-all">
           Q2- how does phototypical work ?
         </h1>
         <p className="text-white">
@@ -42,8 +42,8 @@ const Blog = () => {
           solve users’ needs.
         </p>
       </div>
-      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-green-600">
-        <h1 className="text-2xl font-bold mb-2 text-green-600">
+      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-sky-500">
+        <h1 className="text-2xl font-bold mb-2 text-all">
           Q3- What is a unit test ? Why should we write unit test?
         </h1>
         <p className="text-white">
@@ -61,8 +61,8 @@ const Blog = () => {
           could also introduce new bugs into the system.
         </p>
       </div>
-      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-green-600">
-        <h1 className="text-2xl font-bold mb-2 text-green-600">
+      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-sky-500">
+        <h1 className="text-2xl font-bold mb-2 text-all">
           Q4- React vs Angular vs Vue?
         </h1>
         <p className="text-white">

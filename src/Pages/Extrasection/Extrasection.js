@@ -14,7 +14,7 @@ const Extrasection = () => {
       <div className="grid text-center items-center gap-4 lg:gap-0  grid-cols-1 lg:grid-cols-2">
         {/* left div */}
         <div>
-          <h1 className="text-4xl text-green-600 mb-4">OUR BRANCE</h1>
+          <h1 className="text-4xl text-all mb-4">OUR BRANCE</h1>
           <h1 className="text-2xl mb-2 alt-nav text-white">CHITTAGONG</h1>
           <h1 className="text-2xl mb-2 alt-nav text-white">DHAKA</h1>
           <h1 className="text-2xl mb-2 alt-nav text-white">KHULNA</h1>
@@ -26,7 +26,7 @@ const Extrasection = () => {
           <h1 className="text-center text-3xl font-bold mb-4 text-white">
             ALSO TYPE OF BOOK
           </h1>
-          <div className="grid  grid-cols-2 lg:grid-cols-4 text-center items-center  text-white mb-4 rounded-lg border-2 border-green-600 p-4 ">
+          <div className="grid  grid-cols-2 lg:grid-cols-4 text-center items-center  text-white mb-4 rounded-lg border-2 border-sky-500 p-4 ">
             <h1 className="text-2xl ">Fiction</h1>
             <h1 className="text-2xl">Story</h1>
             <h1 className="text-2xl">Novel</h1>
