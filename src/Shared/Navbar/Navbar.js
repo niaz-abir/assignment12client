@@ -94,7 +94,7 @@ const Navbar = () => {
             </Link>
 
             {!user && (
-              <Link to="/login" className="mr-2 ">
+              <Link to="/login" className="mt-3 mr-2 ">
                 Login
               </Link>
             )}
