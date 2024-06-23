@@ -1,84 +1,243 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 const Blog = () => {
   return (
-    <div className="pt-16 pl-16 pb-8 bg-black">
-      <h1 className="text-4xl justify-start lg:text-center text-all text-bold mb-4 pb-4 text-ellipsis">
-        Learn Your Blog
-      </h1>
-      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-sky-500">
-        <h1 className="text-2xl font-bold mb-2 text-all">
-          Q1- What are the different ways to manage a state in a React
-          application?
-        </h1>
-        <p className="text-white">
-          Ans:As your application grows, it helps to be more intentional about
-          how your state is organized and how the data flows between your
-          components. Redundant or duplicate state is a common source of bugs.
-          In this chapter, you’ll learn how to structure your state well, how to
-          keep your state update logic maintainable, and how to share state
-          between distant components.With React, you won’t modify the UI from
-          code directly. For example, you won’t write commands like “disable the
-          button”, “enable the button”, “show the success message”, etc.
-          Instead, you will describe the UI you want to see for the different
-          visual states of your component (“initial state”, “typing state”,
-          “success state”), and then trigger the state changes in response to
-          user input. This is similar to how designers think about UI.
-        </p>
+    <section>
+      <div class="bg-gray text-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+          <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+            <img
+              class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96"
+              src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              alt=""
+            />
+
+            <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
+              <p class="text-sm text-blue-500 uppercase">BookLife</p>
+
+              <a
+                href="#"
+                class="block mt-4 text-2xl font-semibold text-white hover:underline dark:text-white"
+              >
+                Book is Our Friend
+              </a>
+
+              <p class="mt-3 text-sm text-white dark:text-gray-300 md:text-sm">
+                In an era dominated by digital media and fleeting content, the
+                simple act of reading a book might seem like a quaint activity
+                from the past. However, the magic of a well-crafted book remains
+                unparalleled. Beyond its entertainment value,
+              </p>
+
+              <a
+                href="#"
+                class="inline-block mt-2 text-blue-500 underline hover:text-blue-400"
+              >
+                Read more
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-sky-500">
-        <h1 className="text-2xl font-bold mb-2 text-all">
-          Q2- how does phototypical work ?
-        </h1>
-        <p className="text-white">
-          Prototyping is an experimental process where design teams implement
-          ideas into tangible forms from paper to digital. Teams build
-          prototypes of varying degrees of fidelity to capture design concepts
-          and test on users. With prototypes, you can refine and validate your
-          designs so your brand can release the right products.Prototyping is
-          the fourth phase of both design thinking and design sprints. It’s an
-          essential part of user experience (UX) design that usually comes after
-          ideation, where you/your team have created and selected ideas that can
-          solve users’ needs.
-        </p>
+
+      {/* second blog start */}
+      <div class="bg-black text-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+          <div class="text-center">
+            <h1 class="text-2xl font-semibold text-white capitalize lg:text-3xl dark:text-white">
+              Empathy and Emotional Resonance
+            </h1>
+          </div>
+
+          <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+            <div>
+              <img
+                class="relative z-10 object-cover w-full rounded-md h-96"
+                src="https://images.unsplash.com/photo-1644018335954-ab54c83e007f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt=""
+              />
+
+              <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-secondary rounded-md shadow dark:bg-gray-900">
+                <a
+                  href="#"
+                  class="font-semibold  hover:underline dark:text-white md:text-xl"
+                >
+                  All the features you want to know
+                </a>
+
+                <p class="mt-3 text-sm dark:text-gray-300 md:text-sm">
+                  Reading is a workout for the mind. Unlike passive media
+                  consumption, reading requires active engagement. Your brain
+                  processes the words, constructs mental images, and comprehends
+                  complex ideas. This cognitive exercise sharpens critical
+                  thinking, improves vocabulary, and enhances analytical skills.
+                </p>
+
+                <p class="mt-3 text-sm text-blue-500">21 march 2022</p>
+              </div>
+            </div>
+
+            <div>
+              <img
+                class="relative z-10 object-cover w-full rounded-md h-96"
+                src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt=""
+              />
+
+              <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-secondary rounded-md shadow dark:bg-gray-900">
+                <a
+                  href="#"
+                  class="font-semibold 0 hover:underline dark:text-white md:text-xl"
+                >
+                  How to use sticky note for problem solving
+                </a>
+
+                <p class="mt-3 text-sm  dark:text-gray-300 md:text-sm">
+                  Fictional characters often become like friends, and their
+                  stories resonate within us long after the book is closed. This
+                  emotional connection cultivates empathy as we vicariously
+                  experience the joys and sorrows of the characters. As you
+                  immerse yourself in various narratives, you gain a deeper
+                  understanding
+                </p>
+
+                <p class="mt-3 text-sm text-blue-500">20 October 2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-sky-500">
-        <h1 className="text-2xl font-bold mb-2 text-all">
-          Q3- What is a unit test ? Why should we write unit test?
-        </h1>
-        <p className="text-white">
-          What is Unit Testing? Unit Testing is a type of software testing where
-          individual units or components of a software are tested. The purpose
-          is to validate that each unit of the software code performs as
-          expected. Unit Testing is done during the development (coding phase)
-          of an application by the developers. Unit Tests isolate a section of
-          code and verify its correctness.Unit tests save time and money.
-          Usually, we tend to test the happy path more than the unhappy path. If
-          you release such an app without thorough testing, you would have to
-          keep fixing issues raised by your potential users. The time to fix
-          these issues could’ve been used to build new features or optimize the
-          existing system. Bear in mind that fixing bugs without running tests
-          could also introduce new bugs into the system.
-        </p>
+      <div class="bg-black text-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+          <div class="text-center">
+            <h1 class="text-2xl font-semibold text-white capitalize lg:text-3xl dark:text-white">
+              Stress Relief and Mindfulness
+            </h1>
+          </div>
+
+          <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+            <div>
+              <img
+                class="relative z-10 object-cover w-full rounded-md h-96"
+                src="https://images.unsplash.com/photo-1644018335954-ab54c83e007f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt=""
+              />
+
+              <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-secondary rounded-md shadow dark:bg-gray-900">
+                <a
+                  href="#"
+                  class="font-semibold  hover:underline dark:text-white md:text-xl"
+                >
+                  All the features you want to know
+                </a>
+
+                <p class="mt-3 text-sm dark:text-gray-300 md:text-sm">
+                  In a world filled with distractions, a good book can be a
+                  sanctuary of calm. Engaging with a book demands focus,
+                  allowing you to escape the chaos of everyday life and immerse
+                  yourself in a different world. This act of focused reading
+                  resembles mindfulness meditation, promoting relaxation and
+                  reducing stress
+                </p>
+
+                <p class="mt-3 text-sm text-blue-500">21 October 2019</p>
+              </div>
+            </div>
+
+            <div>
+              <img
+                class="relative z-10 object-cover w-full rounded-md h-96"
+                src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt=""
+              />
+
+              <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-secondary rounded-md shadow dark:bg-gray-900">
+                <a
+                  href="#"
+                  class="font-semibold 0 hover:underline dark:text-white md:text-xl"
+                >
+                  How to use sticky note for problem solving
+                </a>
+
+                <p class="mt-3 text-sm  dark:text-gray-300 md:text-sm">
+                  Books are reservoirs of knowledge, and reading is a lifelong
+                  journey of learning. Non-fiction books provide opportunities
+                  to explore topics of interest, acquire new skills, and deepen
+                  your understanding of the world.
+                </p>
+
+                <p class="mt-3 text-sm text-blue-500">26 July 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="mt-4 mb-6 w-3/4 border-2 p-4 rounded-lg border-sky-500">
-        <h1 className="text-2xl font-bold mb-2 text-all">
-          Q4- React vs Angular vs Vue?
-        </h1>
-        <p className="text-white">
-          Ans: There are three frameworks for building web applications that
-          every frontend developer has heard about: React, Vue.js, and Angular.
-          React is a UI library, Angular is a fully-fledged front-end framework,
-          while Vue.js is a progressive framework. They can be used almost
-          interchangeably to build front-end applications, but they’re not 100
-          percent the same, so it makes sense to compare them and understand
-          their differences. Each framework is component-based and allows the
-          rapid creation of UI features. However, they all have a different
-          structure and architecture — so first, we’ll look into their
-          architectural differences to understand the philosophy behind them.
-        </p>
+      {/* third blog */}
+      <div class="bg-black text-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+          <div class="text-center">
+            <h1 class="text-2xl font-semibold text-white capitalize lg:text-3xl dark:text-white">
+              Lifelong Learning and Personal Growth
+            </h1>
+          </div>
+
+          <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+            <div>
+              <img
+                class="relative z-10 object-cover w-full rounded-md h-96"
+                src="https://images.unsplash.com/photo-1644018335954-ab54c83e007f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt=""
+              />
+
+              <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-secondary rounded-md shadow dark:bg-gray-900">
+                <a
+                  href="#"
+                  class="font-semibold  hover:underline dark:text-white md:text-xl"
+                >
+                  All the features you want to know
+                </a>
+
+                <p class="mt-3 text-sm dark:text-gray-300 md:text-sm">
+                  In a world of fleeting content and instant gratification, the
+                  practice of reading books endures as a profound and enriching
+                  pursuit. Beyond the pleasure of storytelling, books offer
+                  mental stimulation, emotional connection, and personal growth.
+                </p>
+
+                <p class="mt-3 text-sm text-blue-500">7 January 2016</p>
+              </div>
+            </div>
+
+            <div>
+              <img
+                class="relative z-10 object-cover w-full rounded-md h-96"
+                src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt=""
+              />
+
+              <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-secondary rounded-md shadow dark:bg-gray-900">
+                <a
+                  href="#"
+                  class="font-semibold 0 hover:underline dark:text-white md:text-xl"
+                >
+                  How to use sticky note for problem solving
+                </a>
+
+                <p class="mt-3 text-sm  dark:text-gray-300 md:text-sm">
+                  In a world of fleeting content and instant gratification, the
+                  practice of reading books endures as a profound and enriching
+                  pursuit. Beyond the pleasure of storytelling, books offer
+                  mental stimulation, emotional connection, and personal growth.
+                </p>
+
+                <p class="mt-3 text-sm text-blue-500">31 April 209</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

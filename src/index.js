@@ -9,6 +9,7 @@ import {
   QueryClientProvider,
   useQuery,
 } from "@tanstack/react-query";
+import { WishProvider } from "./Context/WishContext";
 
 const queryClient = new QueryClient();
 
@@ -17,7 +18,9 @@ root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <Authprovide>
-        <App />
+        <WishProvider>
+          <App />
+        </WishProvider>
       </Authprovide>
     </QueryClientProvider>
   </React.StrictMode>

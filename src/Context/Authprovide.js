@@ -17,15 +17,18 @@ const Authprovide = ({ children }) => {
   const [user, setuser] = useState();
   const [loading, setloading] = useState(true);
 
-  const createuser = (email, password) => {
+  const createUser = (email, password) => {
+    setloading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
   const login = (email, password) => {
+    setloading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
-  const googleSignin = (provider) => {
+  const googleSignIn = (provider) => {
     return signInWithPopup(auth, provider);
   };
+
   const updateuser = (userinfo) => {
     return updateProfile(auth.currentUser, userinfo);
   };
@@ -43,17 +46,18 @@ const Authprovide = ({ children }) => {
     };
   }, []);
 
-  const authinfo = {
-    createuser,
+  const authInfo = {
+    createUser,
     login,
-    googleSignin,
+    googleSignIn,
     updateuser,
     user,
     logout,
+    loading,
   };
 
   return (
-    <Authcontext.Provider value={authinfo}>
+    <Authcontext.Provider value={authInfo}>
       {!loading && children}
     </Authcontext.Provider>
   );

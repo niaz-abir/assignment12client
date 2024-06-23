@@ -8,14 +8,14 @@ const Allbuyer = () => {
   const { data: allbuyer = [], refetch } = useQuery({
     queryKey: ["buyer"],
     queryFn: () =>
-      fetch("https://assignment12-server.vercel.app/user/all-buyer").then(
-        (res) => res.json()
+      fetch("https://booknokery.vercel.app/user/all-buyer").then((res) =>
+        res.json()
       ),
   });
   const handledelete = async (_id) => {
     try {
       const response = await axios.delete(
-        `https://assignment12-server.vercel.app/user/delete/${_id}`
+        `https://booknokery.vercel.app/user/delete/${_id}`
       );
       if (response?.data?.deletedCount > 0) {
         refetch();

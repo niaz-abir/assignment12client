@@ -9,3 +9,16 @@
   box-shadow: inset 100px 0 0 0 #6198ca;
   color: white;
 }
+
+.btn-two {
+  box-shadow: inset 0 0 0 0 #6198ca;
+  background-color: #6198ca;
+  color: black;
+  margin: 0 -0.25rem;
+  padding: 8px 14px;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.btn-two:hover {
+  box-shadow: inset 100px 0 0 0 #6198ca;
+  color: white;
+}

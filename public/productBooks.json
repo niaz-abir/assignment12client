@@ -1,0 +1,627 @@
+[
+    {
+    
+        "name": "Black Leopard",
+        "type": "fiction",
+        "image": "https://i.ibb.co/gwcrPRZ/345453828-970351224152088-5201136286697497871-n-removebg-preview.png",
+        "writer": "Blake Crouch",
+        "page": "250",
+        "published": "10 April 2002",
+        "price":"460",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "Cloud Atlas",
+        "type": "non-fiction",
+        "image": "https://i.ibb.co/FVbPY9G/345460256-630749235189857-8717253210228009252-n-removebg-preview.png",
+        "writer": "Aldous Huxley",
+        "page": "240",
+        "published": "15 May 2006",
+        "price":"420",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "Snow Crash",
+        "type": "fantasy",
+        "image": "https://i.ibb.co/YLQZS88/345834703-201715592723147-5153563989384656609-n-removebg-preview.png",
+        "writer": "Dan Brown",
+        "page": "230",
+        "published": "19 March 2007",
+        "price":"320",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "The Goldfinch",
+        "type": "thriller",
+        "image": "https://i.ibb.co/C2d0wL5/345841849-795904364974819-2041431167713330090-n-removebg-preview.png",
+        "writer": "Neal Stephenson",
+        "page": "210",
+        "published": "10 January 2007",
+        "price":"300",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Inferno",
+        "type": "self-help",
+        "image": "https://i.ibb.co/W6L46RS/345440764-795998152243974-7527015817258625437-n-removebg-preview.png",
+        "writer": "Orson Scott",
+        "page": "230",
+        "published": "7 June 2008",
+        "price":"410",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Brave New",
+        "type": "poetry",
+        "image": "https://i.ibb.co/v3dXJdp/345440973-7005626466120911-2135190718808517092-n-removebg-preview.png",
+        "writer": "Neil Gaiman",
+        "page": "156",
+        "published": "8 August 2009",
+        "price":"420",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "A Mockingbird",
+        "type": "horror",
+        "image": "https://i.ibb.co/6ydhPkh/345454319-187102977583861-4669932692253798829-n-removebg-preview.png",
+        "writer": "Frank Herbert",
+        "page": "155",
+        "published": "15 December 2006",
+        "price":"300",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "Great Gatsby",
+        "type": "history",
+        "image": "https://i.ibb.co/fHN242r/345463894-1446811249479014-6978293153637484046-n-removebg-preview.png",
+        "writer": "Donna Tartt",
+        "page": "178",
+        "published": "31 March 2004",
+        "price":"240",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "Prejudice",
+        "type": "philosophy",
+        "image": "https://i.ibb.co/GH2SQ6q/345464096-909217906825925-3860688133441535800-n-removebg-preview.png",
+        "writer": "David Mitchell",
+        "page": "212",
+        "published": "24 November 2009",
+        "price":"310",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "The Hobbit",
+        "type": "science-fiction",
+        "image": "https://i.ibb.co/7gmLnPP/345468550-131783003223759-8700941693173470514-n-removebg-preview.png",
+        "writer": "Celeste Ng",
+        "page": "189",
+        "published": "8 April 2002",
+        "price":"410",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Jane Eyre",
+        "type": "self-help",
+        "image": "https://i.ibb.co/F0Tc8Zg/345469191-930158524988978-4040900114426541163-n-removebg-preview.png",
+        "writer": "Neil AGaiman",
+        "page": "205",
+        "published": "7 April 2002",
+        "price":"420",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "The Catcher",
+        "type": "fantasy",
+        "image": "https://i.ibb.co/gdhBrTv/345592103-784143336399123-3305857982790264916-n-removebg-preview.png",
+        "writer": "omi Adeyemi",
+        "page": "134",
+        "published": "6 April 2002",
+        "price":"120",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "Animal Farm",
+        "type": "fiction",
+        "image": "https://i.ibb.co/1sHff3n/345600659-239004092043776-6678283079228732644-n-removebg-preview.png",
+        "writer": "J.D. Salinger",
+        "page": "136",
+        "published": "5 April 2002",
+        "price":"260",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "Frankenstein",
+        "type": "non-fiction",
+        "image": "https://i.ibb.co/r2WvR7z/345623431-750923350020785-735731246189187472-n-removebg-preview.png",
+        "writer": "Marlon James",
+        "page": "140",
+        "published": "4 April 2002",
+        "price":"440",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "Moby-Dick",
+        "type": "science-fiction",
+        "image": "https://i.ibb.co/585CYYn/345623780-1270454486891028-208912742232888302-n-removebg-preview.png",
+        "writer": "Anthony Doerr",
+        "page": "250",
+        "published": "11 April 2008",
+        "price":"440",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Dracula",
+        "type": "history",
+        "image": "https://i.ibb.co/FgB6K3C/345624458-795121302035976-6603357786870671118-n-removebg-preview.png",
+        "writer": "Andy Weir",
+        "page": "150",
+        "published": "10 March 2016",
+        "price":"400",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Little Women",
+        "type": "history",
+        "image": "https://i.ibb.co/VQf51qg/345627761-931699994742243-1930222174879745163-n-removebg-preview.png",
+        "writer": "Kristin Hannah",
+        "page": "190",
+        "published": "10 April 2007",
+        "price":"310",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Gone Girl",
+        "type": "horror",
+        "image": "https://i.ibb.co/k099vxN/345629041-937035867622567-1353785743742165190-n-removebg-preview.png",
+        "writer": "Gillian Flynn",
+        "page": "90",
+        "published": "4 April 2008",
+        "price":"140",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "The Odyssey",
+        "type": "philosophy",
+        "image": "https://i.ibb.co/hKFtsvg/345632678-257644679970731-3619088081218924588-n-removebg-preview.png",
+        "writer": "Harry kane",
+        "page": "210",
+        "published":"10 March 2016",
+        "price":"400",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "Black Leopard",
+        "type": "science-fiction",
+        "image": "https://i.ibb.co/cyTh32F/345633903-6397708823682755-6380871940313468695-n-removebg-preview.png",
+        "writer": "Rashford mac",
+        "page": "170",
+        "published": "14 March 2016",
+        "price":"200",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Cloud Atlas",
+        "type": "self-help",
+        "image": "https://i.ibb.co/7W2RMkG/345635105-1308548283207338-2226848623073417662-n-removebg-preview.png",
+        "writer": "Harry magure",
+        "page": "145",
+        "published": "16 March 2016",
+        "price":"200",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Midnight Sun",
+        "type": "history",
+        "image": "https://i.ibb.co/1TGt5jd/345636281-103653609398708-2809604876088474342-n-removebg-preview.png",
+        "writer": "Dalot covic",
+        "page": "160",
+        "published": "8 March 2016",
+        "price":"200",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Snow Crash",
+        "type": "fantasy",
+        "image": "https://i.ibb.co/y61Ym8N/345639951-255876060274043-8438262669947033547-n-removebg-preview.png",
+        "writer": "Jak pottery",
+        "page": "150",
+        "published": "10 June 2018",
+        "price":"200",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Neverwhere",
+        "type": "philosophy",
+        "image": "https://i.ibb.co/sg857p7/345648692-229359489696433-6235245428676228821-n-removebg-preview.png",
+        "writer": "Kiling Ramos",
+        "page": "180",
+        "published": "4 June 2017",
+        "price":"150",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "The Goldfinch",
+        "type": "horror",
+        "image": "https://i.ibb.co/gvZZzqz/345654154-764888075016910-4969996841862469093-n-removebg-preview.png",
+        "writer": "omi Adeyemi",
+        "page": "140",
+        "published": "10 April 2008",
+        "price":"180",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Circe",
+        "type": "non-fiction",
+        "image": "https://i.ibb.co/LJNk9Vn/345664533-1592339614599812-4004428491709396985-n-removebg-preview.png",
+        "writer": "Orson Scott",
+        "page": "110",
+        "published": "13 March 2016",
+        "price":"170",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Inferno",
+        "type": "poetry",
+        "image": "https://i.ibb.co/0QYY8LW/345667495-566324855632590-4183912345501108477-n-removebg-preview.png",
+        "writer": "Aldous Huxley",
+        "page": "110",
+        "published": "15 March 2016",
+        "price":"150",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Ender's Game",
+        "type": "philosophy",
+        "image": "https://i.ibb.co/V2nRs2K/345830451-633441235480575-6274357015127485889-n-removebg-preview.png",
+        "writer": "Donna Tartt",
+        "page": "120",
+        "published": "16 March 2016",
+        "price":"200",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "The Mightman",
+        "type": "fiction",
+        "image": "https://i.ibb.co/J7wvDGD/345830636-6353051688131893-6645157841202997552-n-removebg-preview.png",
+        "writer": "Anthony Doerr",
+        "page": "130",
+        "published": "17 March 2016",
+        "price":"300",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "The Hobbit",
+        "type": "non-fiction",
+        "image": "https://i.ibb.co/8z3CpZd/345830658-784775113207926-4818052150061724235-n-removebg-preview.png",
+        "writer": "Marlon James",
+        "page": "140",
+        "published": "18 March 2016",
+        "price":"180",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Brave New",
+        "type": "fantasy",
+        "image": "https://i.ibb.co/jMkjtyQ/345833142-3017717608523760-6114994307704739831-n-removebg-preview.png",
+        "writer": "Jak pottery",
+        "page": "150",
+        "published": "19 March 2016",
+        "price":"170",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Moby-Dick",
+        "type": "science-fiction",
+        "image": "https://i.ibb.co/YkRDZ71/345833164-3536271570032588-6134990189697143128-n-removebg-preview.png",
+        "writer": "Dan Brown",
+        "page": "160",
+        "published": "3 August 2018",
+        "price":"200",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Frankenstein",
+        "type": "fiction",
+        "image": "https://i.ibb.co/ZMS9tVk/345833220-3505611469759755-812568734815991470-n-removebg-preview.png",
+        "writer": "Kiling Ramos",
+        "page": "170",
+        "published": "6 June 2019",
+        "price":"250",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "The Goldfinch",
+        "type": "self-help",
+        "image": "https://i.ibb.co/98WHFsJ/345835212-984834412676091-6768976876006392978-n-removebg-preview.png",
+        "writer": "Neal Stephenson",
+        "page": "180",
+        "published": "5 June 2013",
+        "price":"200",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Midnight Sun",
+        "type": "philosophy",
+        "image": "https://i.ibb.co/n8VDwD0/345838660-768824098244162-5823721152219095458-n-removebg-preview.png",
+        "writer": "omi Adeyemi",
+        "page": "190",
+        "published": "15 June 2016",
+        "price":"310",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "Neverwhere",
+        "type": "thriller",
+        "image": "https://i.ibb.co/CBbfVDB/345841197-796020078618636-8158775230715401239-n-removebg-preview.png",
+        "writer": "Orson Scott",
+        "page": "210",
+        "published": "9 June 2013",
+        "price":"420",
+        "discount":"10"
+       
+    
+    },
+    {
+    
+        "name": "Animal Farm",
+        "type": "philosophy",
+        "image": "https://i.ibb.co/gwS5ymT/345841638-622035409512213-2173980772107854323-n-removebg-preview.png",
+        "writer": "Aldous Huxley",
+        "page": "220",
+        "published": "8 March 2016",
+        "price":"430",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "The Goldfinch",
+        "type": "thriller",
+        "image": "https://i.ibb.co/4StvY36/345842880-189161383592954-1434382663363038549-n-removebg-preview.png",
+        "writer": "Anthony Doerr",
+        "page": "230",
+        "published": "7 December 2021",
+        "price":"350",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Frankenstein",
+        "type": "horror",
+        "image": "https://i.ibb.co/XY5S1X9/345843169-615436783965740-4627945935634346364-n-removebg-preview.png",
+        "writer": "Jak pottery",
+        "page": "240",
+        "published": "8 December 2021",
+        "price":"390",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Inferno",
+        "type": "non-fiction",
+        "image": "https://i.ibb.co/gJqP7pB/345844366-766636155085695-8180463433571169132-n-removebg-preview.png",
+        "writer": "Kiling Ramos",
+        "page": "250",
+        "published": "9 December 2021",
+        "price":"440",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Prejudice",
+        "type": "poetry",
+        "image": "https://i.ibb.co/bFPshJ9/345846622-1311312112818314-2477961027736814126-n-removebg-preview.png",
+        "writer": "Blake Crouch",
+        "page": "210",
+        "published": "5 December 2022",
+        "price":"310",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Money Hunt",
+        "type": "history",
+        "image": "https://i.ibb.co/Wf7xvnS/345846930-961176901737475-2298428552645570277-n-removebg-preview.png",
+        "writer": "Dan Brown",
+        "page": "220",
+        "published": "17 December 2018",
+        "price":"320",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Cloud Atlas",
+        "type": "philosophy",
+        "image": "https://i.ibb.co/0jjJTwq/345847145-216399271103635-9128327311734187588-n-removebg-preview.png",
+        "writer": "Aldous Huxley",
+        "page": "130",
+        "published": "15 December 2021",
+        "price":"240",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Moby-Dick",
+        "type": "fiction",
+        "image": "https://i.ibb.co/2dnhmXV/345847829-900720464338173-3518885821178358432-n-removebg-preview.png",
+        "writer": "Orson Scott",
+        "page": "140",
+        "published": "7 November 2019",
+        "price":"160",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Ender's Game",
+        "type": "science-fiction",
+        "image": "https://i.ibb.co/KrMjDmY/345849060-1962118377468833-2798567027947636505-n-removebg-preview.png",
+        "writer": "Aldous Huxley",
+        "page": "150",
+        "published": "21 November 2021",
+        "price":"220",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Money find",
+        "type": "thriller",
+        "image": "https://i.ibb.co/4MxHdK4/345851401-650603790417668-4009789674270392343-n-removebg-preview.png",
+        "writer": "Andy Weir",
+        "page": "160",
+        "published": "7 October 2017",
+        "price":"140",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Gone Girl",
+        "type": "philosophy",
+        "image": "https://i.ibb.co/rpkZtPz/345854277-654905859729059-8931487763258785236-n-removebg-preview.png",
+        "writer": "Anthony Doerr",
+        "page": "180",
+        "published": "7 December 2021",
+        "price":"210",
+        "discount":"15"
+       
+    
+    },
+    {
+    
+        "name": "Black Leopard",
+        "type": "fiction",
+        "image": "https://i.ibb.co/YctV0bV/FB-IMG-1691875128653-removebg-preview-removebg-preview.png",
+        "writer": "J.D. Salinger",
+        "page": "190",
+        "published": "18 December 2021",
+        "price":"220",
+        "discount":"15"
+       
+    
+    }
+   
+]

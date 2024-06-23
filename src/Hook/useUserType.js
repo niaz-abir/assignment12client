@@ -7,7 +7,7 @@ const useUserType = (email) => {
   useEffect(() => {
     const fetchUserType = async () => {
       const response = await axios.get(
-        `https://assignment12-server.vercel.app/user/type/${email}`
+        `https://booknokery.vercel.app/user/type/${email}`
       );
       setUserType(response.data);
       //   console.log(response);

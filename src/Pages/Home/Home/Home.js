@@ -1,21 +1,22 @@
 import React from "react";
 import Banner from "../Banner/Banner";
-import Ctegory from "../Categorey/Ctegory";
-import Review from "../Review/Review";
 import AboutUs from "../AboutUs/AboutUs";
-import Info from "../Info/Info";
-import AllBranch from "../Branch/AllBranch";
+import Contact from "../Contact/Contact";
+import Testimonial from "../Testimonial/Testimonial";
+import Service from "../service";
+import NewBook from "../NewBook.js/NewBook";
+import News from "../News/News";
 
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
       <AboutUs></AboutUs>
-      <Ctegory></Ctegory>
-      <Info></Info>
-      <Review></Review>
-      <AllBranch></AllBranch>
-      {/* <Extrasection></Extrasection> */}
+      <Service />
+      <NewBook />
+      <Contact />
+      <News />
+      <Testimonial />
     </div>
   );
 };

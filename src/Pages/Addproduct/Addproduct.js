@@ -34,7 +34,7 @@ const Addproduct = () => {
     console.log(formdata);
     try {
       const response = await axios.post(
-        `https://assignment12-server.vercel.app/products/new`,
+        `https://booknokery.vercel.app/products/new`,
         formdata
       );
       console.log(response);

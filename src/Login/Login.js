@@ -2,10 +2,12 @@ import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Authcontext } from "../Context/Authprovide";
 import "./Login.css";
+import Lottie from "lottie-react";
+import logAnimation from "../../src/asset/booking.json";
 
 const Login = () => {
   const { login } = useContext(Authcontext);
-  const [error, seterror] = useState("");
+  const [error, setError] = useState("");
   let navigate = useNavigate();
   let location = useLocation();
 
@@ -25,46 +27,56 @@ const Login = () => {
       })
       .catch((error) => {
         console.log(error);
-        seterror("Password cannot matched!");
+        setError("Password cannot matched!");
       });
   };
 
   return (
     <div>
-      <div className="hero min-h-screen bg-black">
-        <div className="hero-content flex-col ">
-          <h1 className="text-3xl text-center text-white">Login</h1>
-          <p className="text-red-600">{error}</p>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl shadow-blue-400 ">
+      <div className="min-h-screen hero">
+        <div className="flex-col hero-content lg:flex-row-reverse">
+          <div className="text-center lg:text-left">
+            <div className="mt-4">
+              <div className="flex justify-center">
+                <Lottie
+                  className="w-3/4"
+                  animationData={logAnimation}
+                  loop={true}
+                ></Lottie>
+              </div>
+            </div>
+          </div>
+          <div className="flex-shrink-0 w-full max-w-sm ml-4 rounded-md shadow-2xl lg:ml-14 bg-secondary card">
             <form onSubmit={handleLogin} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-white">Email</span>
+                  <span className="label-text">Email</span>
                 </label>
                 <input
                   type="email"
                   placeholder="email"
                   name="email"
-                  className="input bg-gray-400 input-bordered"
+                  className="text-white rounded-sm input input-bordered bg-slate-800"
                 />
               </div>
+
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-white">Password</span>
+                  <span className="label-text">Password</span>
                 </label>
                 <input
                   type="password"
                   placeholder="password"
-                  className="input bg-slate-400 input-bordered"
                   name="password"
+                  className="text-white rounded-sm input input-bordered bg-slate-800"
                 />
-                <label className="label">
-                  <Link to="/signup" className="text-blue-400">
-                    New to Signup first
-                  </Link>
-                </label>
               </div>
-              <div className="form-control mt-6">
+              <label className="label">
+                <Link to="/signup" className="text-[#6198ca]">
+                  Move To SignUp For Password
+                </Link>
+              </label>
+              <div className="mt-6 form-control">
                 <button className="btn btn-all">Login</button>
               </div>
             </form>

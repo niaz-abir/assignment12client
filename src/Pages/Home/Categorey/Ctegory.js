@@ -5,7 +5,7 @@ const Ctegory = () => {
   const [categorey, setcatgorey] = useState([]);
 
   useEffect(() => {
-    fetch("https://assignment12-server.vercel.app/categorey")
+    fetch("https://booknokery.vercel.app/categorey")
       .then((res) => res.json())
       .then((data) => setcatgorey(data));
   }, []);

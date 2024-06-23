@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../../../asset/lib-brance1.jpg";
-import img2 from "../../../asset/lib-brance2.jpg";
-import img3 from "../../../asset/lib-branc3.jpg";
+import img1 from "../../../asset/lib-brance1 (1).png";
+import img2 from "../../../asset/lib-brance2(1).png";
+import img3 from "../../../asset/lib-branc3(1).png";
 import Branch from "./Branch";
 
 const AllBranch = () => {
@@ -29,9 +29,13 @@ const AllBranch = () => {
     },
   ];
   return (
-    <div className="mt-14 ml-2">
-      <h1 className="text-2xl mb-6 text-all font-bold ml-8">All Branch</h1>
-      <div className="grid grid-cols-1 lg:grid-cols-3 pl-8 gap-4 pb-8 pr-8 ">
+    <div className="ml-2 mt-14">
+      <h1 className="mb-2 ml-4 text-2xl font-bold lg:ml-12 text-all">
+        Where You Find Us
+      </h1>
+      <hr className="w-[215px] mb-8 ml-4 lg:ml-12 border-t-2 border-blue-500"></hr>
+
+      <div className="grid grid-cols-1 gap-4 pb-8 pl-4 pr-8 lg:pl-8 lg:grid-cols-3 ">
         {AllBranch?.map((single) => (
           <Branch single={single} key={single.id}></Branch>
         ))}

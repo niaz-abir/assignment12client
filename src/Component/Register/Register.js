@@ -4,16 +4,19 @@ import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Authcontext } from "../../Context/Authprovide";
 import toast, { Toast } from "react-hot-toast";
+import Lottie from "lottie-react";
+import reader from "../../asset/reading.json";
 
 const Register = () => {
-  const { createuser, googleSignin } = useContext(Authcontext);
-  const googleprovider = new GoogleAuthProvider();
+  const { createUser, googleSignIn } = useContext(Authcontext);
+  // const googleprovider = new GoogleAuthProvider();
+  const googleProvider = new GoogleAuthProvider();
   const navigate = useNavigate();
 
-  const saveuser = async (name, email, type = "buyer") => {
+  const saveUser = async (name, email, type = "buyer") => {
     try {
       const response = await axios.post(
-        "https://assignment12-server.vercel.app/user/new",
+        "https://booknokery.vercel.app/user/new",
         {
           name,
           email,
@@ -34,88 +37,100 @@ const Register = () => {
     const type = form.type.value;
     const password = form.password.value;
     // console.log(name, email, drone, password);
-    createuser(email, password)
+    createUser(email, password)
       .then((result) => {
         const user = result.user;
         console.log(user);
-        toast.success("create user succesfully");
+        toast.success("create user successfully");
         navigate("/");
 
         if (user) {
-          saveuser(name, email, type);
+          saveUser(name, email, type);
         }
       })
       .catch((error) => console.log(error));
   };
 
   const handleGoogle = () => {
-    googleSignin(googleprovider)
+    googleSignIn(googleProvider)
       .then((result) => {
         const user = result.user;
         console.log(user);
       })
       .catch((error) => console.error(error));
   };
+
   return (
     <div>
-      <div className="hero min-h-screen bg-black">
-        <div className="hero-content flex-col ">
-          <h1 className="text-3xl text-center text-white">Signup</h1>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl shadow-blue-400 ">
+      <div className="min-h-screen mt-6 hero">
+        <div className="flex-col hero-content lg:flex-row-reverse">
+          <div className="text-center lg:text-left">
+            <div className="mt-4">
+              <h1 className="text-4xl font-bold text-center font-serif text-[#6198ca] ">
+                SIGNUP
+              </h1>
+              <div className="flex justify-center">
+                <Lottie
+                  className="ml-8 lg:ml-24"
+                  animationData={reader}
+                  loop={true}
+                ></Lottie>
+              </div>
+            </div>
+          </div>
+          <div className="flex-shrink-0 w-full max-w-sm rounded-md shadow-2xl bg-secondary card">
             <form onSubmit={handleSignup} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-white">Name</span>
+                  <span className="label-text">Name</span>
                 </label>
                 <input
                   type="text"
                   placeholder="name"
                   name="name"
-                  className="input  bg-gray-400 input-bordered"
+                  className="text-white rounded-sm input input-bordered bg-slate-800"
                 />
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text  text-white">Email</span>
+                  <span className="label-text">Email</span>
                 </label>
                 <input
                   type="email"
                   placeholder="email"
                   name="email"
-                  className="input bg-gray-400  input-bordered"
+                  className="text-white rounded-sm input input-bordered bg-slate-800"
                 />
               </div>
-
               <div className="form-control">
-                <label className="label text-white">Account type</label>
-                <select className="input bg-gray-400 " name="type">
+                <label className="text-white label">Account type</label>
+                <select className="text-white bg-slate-800 input " name="type">
                   <option value="buyer">buyer</option>
                   <option value="seller">seller</option>
                 </select>
               </div>
-
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-white">Password</span>
+                  <span className="label-text">Password</span>
                 </label>
                 <input
                   type="password"
                   placeholder="password"
                   name="password"
-                  className="input bg-gray-400 input-bordered"
+                  className="text-white rounded-sm input input-bordered bg-slate-800"
                 />
-                <label className="label">
-                  <Link to="/login" className="text-blue-600">
-                    Go to Login
-                  </Link>
-                </label>
               </div>
-              <div className="form-control mt-6">
-                <button className="btn btn-all">Submit</button>
+              <label className="label">
+                <Link to="/login" className="text-[#6198ca]">
+                  Go to Login
+                </Link>
+              </label>
+              <div className="mt-6 form-control">
+                <button className="btn btn-all">Signup</button>
               </div>
-              <div className="form-control mt-6">
-                <button onClick={handleGoogle} className="btn btn-all ">
-                  SignWithGoogle
+              <div className="mt-6 form-control">
+                <button onClick={handleGoogle} className="btn btn-all">
+                  GoogleSign
                 </button>
               </div>
             </form>

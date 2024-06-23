@@ -4,6 +4,7 @@ import { Authcontext } from "../../Context/Authprovide";
 import useUserType from "../../Hook/useUserType";
 import "./Navbar.css";
 import { AiFillRead } from "react-icons/ai";
+import { FaBars, FaUser } from "react-icons/fa";
 
 const Navbar = () => {
   const { user, logout } = useContext(Authcontext);
@@ -17,95 +18,123 @@ const Navbar = () => {
   console.log(user);
   console.log(userType);
   return (
-    <div>
-      <div className="navbar pt-8 text-white pr-8 bg-black mr-8 flex justify-between">
+    <div className="mx-auto max-w-7xl">
+      <div className="flex justify-between pt-8 pr-8 mr-8 text-white shadow shadow-gray-900 navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+              <FaBars />
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52"
+              className="p-2 mt-3 shadow menu menu-compact dropdown-content rounded-box w-52"
             >
-              <Link to="/home">Home</Link>
-              <Link to="/login">Login</Link>
-              <Link to="/blog">Blog</Link>
-              <Link to="/categorey">categorey</Link>
+              <Link to="/home" className="mr-4 font-bold ">
+                Home
+              </Link>
+              <Link to="/online-books" className="mr-4 font-bold ">
+                Online-Book
+              </Link>
+              <Link to="/book" className="mr-4 font-bold ">
+                Product
+              </Link>
+              <Link to="/community" className="mr-4 font-bold">
+                Community
+              </Link>
+              <Link to="/blog" className="mr-2 font-bold ">
+                Blog
+              </Link>
+              <Link to="/wish-list" className="mr-2 font-bold ">
+                WishList
+              </Link>
+              <Link to="/my-order-product" className="mr-2 font-bold ">
+                My Order
+              </Link>
+
+              {!user && (
+                <Link to="/login" className="mr-2 text-2xl ">
+                  Login
+                </Link>
+              )}
             </ul>
           </div>
-          <div className="flex gap-4 items-center ml-4">
-            <AiFillRead className="text-all text-[30px]"></AiFillRead>
-            <Link to="/" className="text-[30px]">
-              Bookworm Shack
+          <div className="flex items-center gap-4 ml-4">
+            <AiFillRead className="text-all hidden lg:block text-[30px]"></AiFillRead>
+            <Link to="/" className=" text-[18px] lg:text-[30px]">
+              Book Nookery
             </Link>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal p-0">
-            <Link to="/home" className="mr-4 nav-menu   text-2xl">
+
+        <div className="hidden navbar-center lg:flex">
+          <ul className="p-0 menu menu-horizontal text-[18px]">
+            <Link to="/home" className="p-3 mr-4 rounded-md hover:bg-gray-800 ">
               Home
             </Link>
-            <Link to="/login" className="mr-2 nav-menu  text-2xl">
-              Login
+            <Link
+              to="/community"
+              className="p-3 mr-4 rounded-md hover:bg-gray-800 "
+            >
+              Community
             </Link>
-            <Link to="/blog" className="mr-2 ml-2 nav-menu text-2xl">
+            <Link
+              to="/online-books"
+              className="p-3 mr-4 rounded-md hover:bg-gray-800 "
+            >
+              Online-Book
+            </Link>
+            <Link to="/book" className="p-3 mr-4 rounded-md hover:bg-gray-800 ">
+              Product
+            </Link>
+            <Link
+              to="/blog"
+              className="p-3 ml-2 mr-4 rounded-md hover:bg-gray-800 "
+            >
               Blog
             </Link>
-            {/* <Link to="/categorey" className="mr-2 ml-2 nav-menu  text-2xl">
-              categorey
-            </Link> */}
 
-            {user?.uid && userType == "buyer" && (
-              <Link to="/my-order" className="mr-2 ml-2 nav-menu text-2xl">
-                My Order
+            {!user && (
+              <Link to="/login" className="mr-2 ">
+                Login
               </Link>
             )}
-            {user?.uid && userType == "seller" && (
-              <>
-                <Link to="/add-product" className="mr-2 ml-2 nav-menu text-2xl">
-                  Add Product
-                </Link>
-                <Link to="/my-product" className="mr-2 ml-2 nav-menu text-2xl">
-                  My Product
-                </Link>
-              </>
-            )}
 
-            {user?.uid && userType == "admin" && (
-              <>
-                <>
+            <div className="ml-4 dropdown dropdown-end">
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  {user?.photoURL ? (
+                    <img
+                      className="w-8 mr-2 rounded lg:w-14 tooltip"
+                      src={user?.photoURL}
+                      alt=""
+                    ></img>
+                  ) : (
+                    <div className="flex justify-center items-center mt-2  text-[20px]">
+                      <FaUser className=" text-[26px] text-[#80b7eb]"></FaUser>
+                    </div>
+                  )}
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow text-white bg-secondary rounded-box w-52"
+              >
+                <li>
+                  <Link to="/wish-list">WishList</Link>
+                </li>
+                <li>
+                  <Link to="/my-order-product">My Order</Link>
+                </li>
+                {user && (
                   <Link
-                    to="/all-seller"
-                    className="mr-2 ml-2 nav-menu text-2xl"
+                    onClick={handlelogout}
+                    className="ml-2 mr-2 text-2xl nav-menu"
                   >
-                    All Sellers
+                    Logout
                   </Link>
-                  <Link to="/all-buyer" className="mr-2 ml-2 nav-menu text-2xl">
-                    All Buyers
-                  </Link>
-                </>
-              </>
-            )}
-            <Link
-              onClick={handlelogout}
-              className="mr-2 ml-2 nav-menu  text-2xl"
-            >
-              Logout
-            </Link>
+                )}
+              </ul>
+            </div>
           </ul>
         </div>
       </div>
